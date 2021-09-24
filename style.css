@@ -54,6 +54,7 @@
     bottom: -15vmin;
     right: 18vmin;
     box-shadow: 13vmin 0 #000;
+    animation: blink 3s infinite;
 }
 
 .cheeks {
@@ -217,4 +218,13 @@
     border-right: 1vmin solid transparent;
     border-bottom: 7vmin solid #335d2d;
     transform: rotate(240deg);
+}
+
+/* Eyes Animation */
+
+@keyframes blink {
+    0% {transform: scale(1, 0.1);}
+    30% {transform: scale(1, 1);}
+    70% {transform: scale(1, 1);}
+    100% {transform: scale(1, 0.1);}
 }
